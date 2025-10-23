@@ -1,4 +1,5 @@
-function renderCameraList(cameras, $container) {
+function renderCameraList(cameras) {
+    const $container = document.getElementById("cameraList");
     $container.innerHTML = "";
 
     if (cameras.length === 0) {

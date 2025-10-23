@@ -9,9 +9,86 @@
     }
 }
 
+/* === Header (title, nav & logout) & Main & Footer (copyright message) === */
+header, footer {
+    background-color: var(--green-300);
+    box-shadow: var(--shadow);
+}
+
+header span {
+    font-weight: bold;
+}
+
+main {
+    margin: 2rem 1rem;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* === Map & List === */
+#ml .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
 /* === Map === */
 #map {
-    height: 80vh;
-    border-radius: var(--border-radius);
+    height: 100%;
+    border-radius: var(--radius);
     box-shadow: var(--shadow);
+}
+
+/* === Camera List === */
+#search {
+    color: var(--gray-500);
+    background-color: var(--green-200);
+}
+
+#search:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#cameraList .list-group-item{
+    color: var(--gray-500);
+    background-color: var(--green-100);
+    border-top: 0.1rem solid var(--green-200);
+}
+
+#cameraList .list-group-item:hover{
+    background-color: var(--green-200);
+}
+
+#cameraList .bookmarked {
+    background-color: var(--accent-gold);
+}
+
+#cameraListContainer {
+    height: 100%;
+    overflow-y: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--green-300);
+        border-radius: var(--radius);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--green-300);
+        border-radius: var(--radius);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: var(--green-400);
+    }
 }
