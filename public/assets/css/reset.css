@@ -14,7 +14,8 @@
     --gray-500: hsl(0, 0%, 10%);   /* near black */
 
     /* === Accent colors === */
-    --accent-gold: hsl(50, 100%, 60%);
+    --accent-gold-200: hsl(45, 78%, 75%);
+    --accent-gold-300: hsl(50, 100%, 60%);
     --accent-red: hsl(0, 70%, 50%);
 
     /* === TYPOGRAPHY === */

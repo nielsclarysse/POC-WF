@@ -11,11 +11,16 @@
 
 /* === Header (title, nav & logout) & Main & Footer (copyright message) === */
 header, footer {
+    color: var(--gray-100) !important;
     background-color: var(--green-300);
     box-shadow: var(--shadow);
 }
 
-header span {
+header span, header nav li a, #logout {
+    color: var(--gray-100) !important;
+}
+
+header span, header nav li a.active, #logout {
     font-weight: bold;
 }
 
@@ -67,7 +72,12 @@ footer {
         }
 
         &.gold {
-            border-top: 0.1rem solid var(--accent-gold);
+            background-color: var(--accent-gold-200);
+            border-top: 0.1rem solid var(--accent-gold-300);
+        }
+
+        &.gold:hover {
+            background-color: var(--accent-gold-300);
         }
 
         button {
@@ -77,7 +87,7 @@ footer {
         }
 
         button.bookmarked {
-            background-color: var(--accent-gold);
+            background-color: var(--accent-gold-300);
         }
     }
 }
