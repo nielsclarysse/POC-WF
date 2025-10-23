@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: style improvements to the scrollbar">
+    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: more style improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/map.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +82,7 @@
       <workItem from="1761214588243" duration="293000" />
       <workItem from="1761214904037" duration="43000" />
       <workItem from="1761215591780" duration="384000" />
-      <workItem from="1761217591230" duration="635000" />
+      <workItem from="1761217591230" duration="692000" />
     </task>
     <task id="LOCAL-00001" summary="Snapshot :-)">
       <option name="closed" value="true" />
@@ -183,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761214942223</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Final: more style improvements">
+      <option name="closed" value="true" />
+      <created>1761218260431</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1761218260431</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +204,7 @@
     <MESSAGE value="Final: style improvements to the map" />
     <MESSAGE value="Final: style improvements to the footer" />
     <MESSAGE value="Final: style improvements to the scrollbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final: style improvements to the scrollbar" />
+    <MESSAGE value="Final: more style improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final: more style improvements" />
   </component>
 </project>
