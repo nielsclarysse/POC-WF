@@ -131,6 +131,7 @@ body {
     margin-bottom: 0.25rem;
     padding: 0.5rem;
     border: 0.0625rem solid hsl(var(--h), 30%, 90%);
+    flex-shrink: 0;
 }
 #search:focus {
     border-color: var(--green);
@@ -139,7 +140,7 @@ body {
 }
 
 #cameraList {
-    flex: 1;
+    height: 20rem; /* Fixed height for scrolling */
     overflow-y: auto;
     border-radius: var(--border-radius);
     padding: 0;
@@ -232,6 +233,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: var(--transition);
+}
+.card:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+}
+
+#footer {
+    background: var(--green);
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 #dashboard {
@@ -240,12 +257,14 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 #mapView {
     flex: 1;
     padding: 0.5rem;
     overflow: hidden;
     margin: 0;
+    padding-bottom: 2rem; /* Space for footer */
 }
 #mapView .row {
     height: 100%;
@@ -290,5 +309,15 @@ body {
     }
     .card {
         height: auto;
+    }
+    #footer {
+        position: static;
+        padding: 0.25rem;
+    }
+    #mapView {
+        padding-bottom: 0;
+    }
+    #cameraList {
+        height: 15rem; /* Smaller fixed height on mobile */
     }
 }
