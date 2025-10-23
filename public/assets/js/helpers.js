@@ -1,3 +1,4 @@
+// helpers.js
 function renderCameraList(cameras) {
     const $container = document.getElementById("cameraList");
     $container.innerHTML = "";
@@ -12,12 +13,26 @@ function renderCameraList(cameras) {
 
     cameras.forEach(c => {
         const $li = document.createElement("li");
-        $li.className = "list-group-item list-group-item-action";
-        $li.textContent = c.name;
+        $li.className = `list-group-item list-group-item-action ${window.bookmarked.has(c.name) ? 'gold' : ''}`;
 
-        $li.addEventListener("click", () => {
-            c.marker.openPopup();
-            c._map.setView([c.lat, c.lng], 5);
+        const $div = document.createElement("div");
+        $div.textContent = c.name;
+        $div.style.display = "inline-block";
+
+        const $button = document.createElement("button");
+        $button.textContent = window.bookmarked.has(c.name) ? "Bookmarked" : "Bookmark";
+        window.bookmarked.has(c.name) ? $button.classList.add("bookmarked") : $button.classList.remove("bookmarked")
+        $button.style.float = "right";
+        $button.onclick = () => window.toggleBookmark(c.name);
+
+        $li.appendChild($div);
+        $li.appendChild($button);
+
+        $li.addEventListener("click", (e) => {
+            if (e.target !== $button) {
+                c.marker.openPopup();
+                c._map.setView([c.lat, c.lng], 5);
+            }
         });
 
         $container.appendChild($li);

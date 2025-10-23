@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: the map page functions now, just need some styling">
-      <change afterPath="$PROJECT_DIR$/public/assets/js/config.js" afterDir="false" />
+    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: all works on map (now try to add bookmarks)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,7 @@
       <workItem from="1761148194462" duration="101000" />
       <workItem from="1761148304229" duration="4600000" />
       <workItem from="1761159184022" duration="2097000" />
-      <workItem from="1761198734742" duration="10904000" />
+      <workItem from="1761198734742" duration="12388000" />
     </task>
     <task id="LOCAL-00001" summary="Snapshot :-)">
       <option name="closed" value="true" />
@@ -128,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761205187804</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Final: all works on map (now try to add bookmarks)">
+      <option name="closed" value="true" />
+      <created>1761211556296</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761211556296</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +146,7 @@
     <MESSAGE value="Final: add css template and authentication button" />
     <MESSAGE value="Final: completes the authentication screen" />
     <MESSAGE value="Final: the map page functions now, just need some styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final: the map page functions now, just need some styling" />
+    <MESSAGE value="Final: all works on map (now try to add bookmarks)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final: all works on map (now try to add bookmarks)" />
   </component>
 </project>

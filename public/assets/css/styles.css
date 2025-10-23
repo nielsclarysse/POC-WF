@@ -47,25 +47,37 @@ footer {
 #search {
     color: var(--gray-500);
     background-color: var(--green-200);
+
+    &:focus {
+        border: none;
+        box-shadow: none;
+    }
 }
 
-#search:focus {
-    border: none;
-    box-shadow: none;
-}
+#cameraList {
+    .list-group-item {
+        color: var(--gray-500);
+        background-color: var(--green-100);
+        border-top: 0.1rem solid var(--green-200);
 
-#cameraList .list-group-item{
-    color: var(--gray-500);
-    background-color: var(--green-100);
-    border-top: 0.1rem solid var(--green-200);
-}
+        &:hover {
+            background-color: var(--green-200);
+        }
 
-#cameraList .list-group-item:hover{
-    background-color: var(--green-200);
-}
+        &.gold {
+            border-top: 0.1rem solid var(--accent-gold);
+        }
 
-#cameraList .bookmarked {
-    background-color: var(--accent-gold);
+        button {
+            padding: 0 0.5rem;
+            background-color: var(--green-200);
+            border-radius: var(--radius);
+        }
+
+        button.bookmarked {
+            background-color: var(--accent-gold);
+        }
+    }
 }
 
 #cameraListContainer {
