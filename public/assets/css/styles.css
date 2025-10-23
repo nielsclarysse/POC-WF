@@ -8,3 +8,10 @@
         background-color: var(--green-400);
     }
 }
+
+/* === Map === */
+#map {
+    height: 80vh;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
