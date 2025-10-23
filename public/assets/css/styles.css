@@ -98,7 +98,7 @@ footer {
     }
 
     &::-webkit-scrollbar-thumb {
-        background: var(--green-300);
+        background: var(--green-400);
         border-radius: var(--radius);
     }
 

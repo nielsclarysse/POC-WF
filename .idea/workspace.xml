@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: style improvements to the map">
+    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: style improvements to the footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
     </list>
@@ -68,7 +68,8 @@
       <workItem from="1761148304229" duration="4600000" />
       <workItem from="1761159184022" duration="2097000" />
       <workItem from="1761198734742" duration="12618000" />
-      <workItem from="1761214588243" duration="282000" />
+      <workItem from="1761214588243" duration="293000" />
+      <workItem from="1761214904037" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="Snapshot :-)">
       <option name="closed" value="true" />
@@ -150,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761214818217</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Final: style improvements to the footer">
+      <option name="closed" value="true" />
+      <created>1761214873847</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1761214873847</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +173,7 @@
     <MESSAGE value="Final: all works on map (now try to add bookmarks)" />
     <MESSAGE value="Final: adds the bookmarks!" />
     <MESSAGE value="Final: style improvements to the map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final: style improvements to the map" />
+    <MESSAGE value="Final: style improvements to the footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final: style improvements to the footer" />
   </component>
 </project>
