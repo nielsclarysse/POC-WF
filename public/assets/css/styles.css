@@ -1,18 +1,14 @@
 :root {
     --h: 155;
     --s: 40%;
-    --l: 20%; /* Deep green primary */
+    --l: 50%; /* Lighter green primary */
     --green: hsl(var(--h), var(--s), var(--l));
-    --green-light: hsl(var(--h), var(--s), 35%);
-    --green-lighter: hsl(var(--h), var(--s), 45%);
-    --green-bg: hsl(var(--h), 25%, 95%);
-    --green-border: hsl(var(--h), 30%, 85%);
-    --yellow: hsl(50, 100%, 60%);
-    --red: hsl(0, 70%, 50%);
-    --border-radius: 0.5rem;
-    --transition: 0.3s ease;
-    --shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
-    --shadow-lg: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    --green-light: hsl(var(--h), var(--s), 60%);
+    --green-bg: hsl(var(--h), 25%, 97%);
+    --yellow: hsl(50, 80%, 70%);
+    --red: hsl(0, 60%, 55%);
+    --border-radius: 0.25rem;
+    --transition: 0.2s ease;
 }
 
 .hidden {
@@ -22,100 +18,82 @@
 html {
     font-size: 16px;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background: var(--green-bg);
     color: #333;
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .navbar {
     background: var(--green);
-    padding: 0.75rem 1.5rem;
-    box-shadow: var(--shadow);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 0.5rem 1rem;
+    margin: 0;
 }
 .navbar-brand {
-    font-weight: 600;
-    font-size: 1.25rem;
+    font-weight: 500;
+    font-size: 1.125rem;
 }
 .nav-link {
-    color: rgba(255,255,255,0.9);
-    margin-right: 0.5rem;
-    padding: 0.5rem 1rem;
+    color: rgba(255,255,255,0.85);
+    margin-right: 0.25rem;
+    padding: 0.25rem 0.5rem;
     border-radius: var(--border-radius);
     transition: var(--transition);
-    font-weight: 500;
 }
 .nav-link.active {
     color: #fff;
-    background: hsla(var(--h), 40%, 15%, 0.4);
-    box-shadow: inset 0 0.125rem 0.25rem rgba(0,0,0,0.2);
+    background: hsla(var(--h), 40%, 30%, 0.4);
 }
 .nav-link:hover {
-    background: hsla(var(--h), 40%, 25%, 0.3);
-    color: #fff;
+    background: hsla(var(--h), 40%, 30%, 0.2);
 }
 
 .btn-primary {
     background: var(--green);
     border-color: var(--green);
     transition: var(--transition);
-    font-weight: 500;
-    padding: 0.5rem 1.5rem;
-    border-radius: var(--border-radius);
 }
 .btn-primary:hover {
     background: var(--green-light);
     border-color: var(--green-light);
-    transform: translateY(-0.125rem);
-    box-shadow: var(--shadow);
 }
 .btn-outline-danger {
     color: var(--red);
     border-color: var(--red);
     transition: var(--transition);
-    font-weight: 500;
-    padding: 0.5rem 1.5rem;
-    border-radius: var(--border-radius);
 }
 .btn-outline-danger:hover {
     background: var(--red);
     color: #fff;
-    transform: translateY(-0.125rem);
-    box-shadow: var(--shadow);
 }
 
 .buy {
-    border: 0.125rem solid var(--green);
+    border: 0.0625rem solid var(--green);
     color: var(--green);
     border-radius: var(--border-radius);
-    padding: 0.75rem 1rem;
-    margin: 0.25rem 0;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
     cursor: pointer;
     transition: var(--transition);
-    font-weight: 500;
     background: transparent;
-    font-size: 1rem;
+    width: 100%;
 }
 .buy:hover {
     background: var(--green);
     color: #fff;
-    transform: translateY(-0.125rem);
-    box-shadow: var(--shadow);
 }
 .buy.current {
     background: var(--yellow);
-    border-color: hsl(50,100%,50%);
+    border-color: hsl(50,80%,60%);
     color: #333;
-    box-shadow: var(--shadow);
 }
 
 .modal-header {
@@ -123,50 +101,40 @@ body {
     color: #fff;
     border-bottom: none;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
-    padding: 1rem 1.5rem;
 }
 .modal-body {
-    padding: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.6;
+    padding: 1rem;
+    font-size: 0.9375rem;
 }
 .modal-content {
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow-lg);
-}
-.modal-footer {
-    border-top: none;
-    padding: 1rem 1.5rem;
 }
 
 #map {
     height: 100%;
     border-radius: var(--border-radius);
-    border: 0.125rem solid var(--green-border);
-    box-shadow: var(--shadow);
+    border: 0.0625rem solid hsl(var(--h),40%,85%);
 }
 
 .bg-panel {
-    background: hsla(var(--h), 25%, 95%, 0.9);
-    border: 0.125rem solid var(--green-border);
+    background: hsla(var(--h), 25%, 97%, 0.9);
+    border: 0.0625rem solid hsl(var(--h), 30%, 90%);
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 1rem;
-    box-shadow: var(--shadow);
+    padding: 0.5rem;
 }
 
 #search {
     border-radius: var(--border-radius);
-    margin-bottom: 0.5rem;
-    padding: 0.75rem;
-    border: 0.125rem solid var(--green-border);
-    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem;
+    border: 0.0625rem solid hsl(var(--h), 30%, 90%);
 }
 #search:focus {
     border-color: var(--green);
-    box-shadow: 0 0 0 0.25rem hsla(var(--h),50%,80%,0.3);
+    box-shadow: 0 0 0 0.125rem hsla(var(--h),50%,85%,0.3);
     outline: none;
 }
 
@@ -177,10 +145,10 @@ body {
     padding: 0;
 }
 #cameraList::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.375rem;
 }
 #cameraList::-webkit-scrollbar-track {
-    background: hsla(var(--h), 25%, 90%, 0.5);
+    background: hsla(var(--h), 25%, 95%, 0.5);
     border-radius: var(--border-radius);
 }
 #cameraList::-webkit-scrollbar-thumb {
@@ -193,20 +161,19 @@ body {
 .list-group-item-action {
     cursor: pointer;
     transition: var(--transition);
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.75rem;
     border: none;
     border-radius: var(--border-radius);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.125rem;
 }
 .list-group-item-action:hover {
-    background: hsla(var(--h),40%,40%,0.1);
-    transform: translateX(0.25rem);
+    background: hsla(var(--h),40%,45%,0.1);
 }
 
 #dataView {
-    padding: 2rem;
+    padding: 1rem;
     background: var(--green-bg);
-    min-height: calc(100vh - 4rem);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,23 +181,22 @@ body {
 }
 #dataView h5 {
     color: var(--green);
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 #chartSightings {
     width: 100%;
     height: 100%;
-    max-height: 25rem;
+    max-height: 18.75rem;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
 }
 
 #subsView {
-    padding: 2rem;
+    padding: 1rem;
     background: var(--green-bg);
-    min-height: calc(100vh - 4rem);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,45 +204,60 @@ body {
 }
 #subsView h4 {
     color: var(--green);
-    margin-bottom: 1rem;
-    font-size: 1.75rem;
-    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 #subMsg {
     margin-bottom: 1rem;
 }
-.row.g-2 {
-    max-width: 50rem;
+#subsView .row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 60rem;
 }
-.col-md-2 {
+#subsView .col-md-2 {
     flex: 1;
-    max-width: 12rem;
+    max-width: 15rem;
+}
+.card {
+    background: #fff;
+    border: 0.0625rem solid hsl(var(--h), 30%, 90%);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    text-align: center;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #dashboard {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 #mapView {
     flex: 1;
-    padding: 1rem;
+    padding: 0.5rem;
     overflow: hidden;
+    margin: 0;
 }
 #mapView .row {
     height: 100%;
+    margin: 0;
 }
 #mapView .col-md-9 {
-    padding-right: 0.5rem;
+    padding-right: 0.25rem;
+    padding-left: 0;
 }
 #mapView .col-md-3 {
-    padding-left: 0.5rem;
-}
-
-/* Fullscreen adjustments */
-.container-fluid {
-    height: 100%;
-    padding: 0;
+    padding-left: 0.25rem;
+    padding-right: 0;
 }
 
 /* Responsive tweaks */
@@ -287,10 +268,10 @@ body {
     }
     #mapView .col-md-9, #mapView .col-md-3 {
         height: 50vh;
-        padding: 0.5rem;
+        padding: 0.25rem;
     }
     #dataView, #subsView {
-        padding: 1rem;
+        padding: 0.5rem;
     }
     .navbar-nav {
         flex-direction: column;
@@ -298,6 +279,16 @@ body {
     }
     .nav-link {
         margin-right: 0;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.125rem;
+    }
+    #subsView .row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    #subsView .col-md-2 {
+        max-width: none;
+    }
+    .card {
+        height: auto;
     }
 }
