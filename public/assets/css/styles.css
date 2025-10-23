@@ -1,0 +1,37 @@
+:root {
+    /* === Greens — from light mint to deep forest === */
+    --green-100: hsl(155, 40%, 90%);   /* very light mint */
+    --green-200: hsl(155, 40%, 75%);   /* soft pastel green */
+    --green-300: hsl(155, 40%, 50%);   /* balanced mid green */
+    --green-400: hsl(155, 40%, 35%);   /* rich forest green (main accent) */
+    --green-500: hsl(155, 40%, 20%);   /* deep, elegant emerald */
+
+    /* === Grayscale — from white to near-black === */
+    --gray-100: hsl(0, 0%, 98%);   /* almost white */
+    --gray-200: hsl(0, 0%, 90%);   /* very light gray */
+    --gray-300: hsl(0, 0%, 60%);   /* medium gray for borders/icons */
+    --gray-400: hsl(0, 0%, 35%);   /* dark gray for text */
+    --gray-500: hsl(0, 0%, 10%);   /* near black */
+
+    /* === Accent colors === */
+    --accent-gold: hsl(50, 100%, 60%);
+    --accent-red: hsl(0, 70%, 50%);
+
+    /* === THEME MAPPING === */
+    --bg-main: var(--gray-100);
+    --bg-panel: var(--green-100);
+    --border-color: var(--gray-200);
+    --text-color: var(--gray-500);
+    --text-muted: var(--gray-300);
+    --primary: var(--green-400);
+    --primary-light: var(--green-300);
+    --primary-dark: var(--green-500);
+
+    /* === TYPOGRAPHY === */
+    --font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+
+    /* === SPACING (in rem) === */
+    --radius: 0.5rem;
+    --shadow: 0 0.2rem 0.5rem hsla(0, 0%, 0%, 0.15);
+    --transition: all 0.2s ease-in-out;
+}
