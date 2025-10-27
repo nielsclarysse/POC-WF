@@ -1,4 +1,4 @@
-/* assets/js/script.js
+/* assets/js/map.js
    Fully functional, simple JS for Wildlife Detection System mockup
 */
 
