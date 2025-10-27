@@ -1,5 +1,5 @@
-/* === Authentication Button === */
-#authBtn, .subscriptionBtn, #cancelBtn, #acceptBtn {
+/* === Authentication, ... Button === */
+#authBtn, .subscriptionBtn, #cancelBtn, #acceptBtn, #sendBtn {
     color: var(--gray-100);
     background-color: var(--green-300);
     border: none;
@@ -190,5 +190,16 @@ footer {
         display: inline-block;
         width: 49%;
         padding: 0.5rem;
+    }
+
+    & form input {
+        width: 100%;
+        margin-bottom: 0.25rem;
+        border: 0.1rem solid var(--gray-200);
+        border-radius: var(--radius);
+
+        &:last-of-type {
+            margin-bottom: 1rem;
+        }
     }
 }
