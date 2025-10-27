@@ -47,6 +47,18 @@ footer {
     height: 100%;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+
+    & span {
+        color: var(--gray-400);
+    }
+}
+
+.marker-green {
+    filter: hue-rotate(25deg) saturate(0.6) brightness(1.1);
+}
+
+.marker-gold {
+    filter: hue-rotate(-5deg) saturate(1) brightness(1.1);
 }
 
 /* === Camera List === */
