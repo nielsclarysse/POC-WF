@@ -1,16 +1,3 @@
-function createPopup() {
-    const popup = document.createElement("div");
-    popup.id = "confirmPopup";
-    popup.style = "display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; border:1px solid black; padding:20px;";
-    popup.innerHTML = `
-        <p>Are you sure?</p>
-        <button id="cancelBtn">Cancel</button>
-        <button id="acceptBtn">Accept</button>
-    `;
-    document.body.appendChild(popup);
-    return popup;
-}
-
 function highlightSelectedTier(buttons, tier) {
     buttons.forEach(btn => btn.classList.remove("selected"));
     buttons.forEach(btn => {
@@ -20,19 +7,21 @@ function highlightSelectedTier(buttons, tier) {
 
 function setupSubscriptionButtons() {
     const buttons = document.querySelectorAll(".subscriptionBtn");
-    const popup = createPopup();
-    const cancelBtn = popup.querySelector("#cancelBtn");
-    const acceptBtn = popup.querySelector("#acceptBtn");
+    const popup = document.getElementById("confirmPopup");
+    const cancelBtn = document.getElementById("cancelBtn");
+    const acceptBtn = document.getElementById("acceptBtn");
 
     let selectedTier = localStorage.getItem("tier") || "Free";
     let pendingTier = null;
+
+    popup.style.display = "none";
 
     highlightSelectedTier(buttons, selectedTier);
 
     buttons.forEach(btn => {
         btn.addEventListener("click", () => {
             pendingTier = btn.dataset.tier;
-            popup.style.display = "block";
+            popup.style.display = "block"; // show popup
         });
     });
 
