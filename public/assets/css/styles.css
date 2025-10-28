@@ -333,3 +333,9 @@ footer {
         }
     }
 }
+
+#graphTab .card-body {
+    min-height: 68vh;
+    max-height: 68vh;
+    align-items: center;
+}

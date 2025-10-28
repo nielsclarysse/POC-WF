@@ -68,8 +68,9 @@ function renderChart(data) {
                 label: "Activity Count",
                 data: counts,
                 borderWidth: 2,
-                fill: false,
-                tension: 0.4
+                borderColor: 'hsl(155, 40%, 50%)',
+                fill: true,
+                tension: 0.3
             }]
         },
         options: {
