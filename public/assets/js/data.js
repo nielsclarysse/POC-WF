@@ -1,27 +1,43 @@
+if (localStorage.getItem("tier") !== "Researcher") {
+    document.querySelector("#subscriptionError").style.display = "block";
+    document.querySelector("main").style.filter = "blur(2px)";
+}
+else {
+    document.querySelector("#subscriptionError").style.display = "none";
+    document.querySelector("main").style.filter = "none";
+}
+
 const generateBtn = document.getElementById("generateBtn");
 const dataTableBody = document.querySelector("#dataTable tbody");
 const ctx = document.getElementById("activityChart").getContext("2d");
 let chart;
 
-document.querySelector("#filterError #cancelBtn").addEventListener("click", () => {
+document.querySelector("#filterError #understoodBtn").addEventListener("click", () => {
     document.querySelector("#filterError").style.display = "none";
     document.querySelector("main").style.filter = "none";
 });
 
 function generateRandomData(region, speciesList, from, to) {
     const data = [];
-    const now = new Date();
-    for (let i = 0; i < 8; i++) {
+    const start = from ? new Date(from) : new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+    const end = to ? new Date(to) : new Date();
+
+    const daysBetween = Math.max(1, Math.floor((end - start) / (1000 * 3600 * 24)));
+    const entriesCount = Math.min(300, daysBetween * 40);
+
+    for (let i = 0; i < entriesCount; i++) {
         const randomSpecies = speciesList[Math.floor(Math.random() * speciesList.length)];
-        const date = new Date(now - Math.random() * 1000 * 3600 * 24);
+        const timestamp = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+
         data.push({
-            dateTime: date.toISOString().slice(0, 16).replace("T", " "),
+            dateTime: timestamp.toISOString().slice(0, 16).replace("T", " "),
             species: randomSpecies,
-            count: Math.floor(Math.random() * 4) + 1,
+            count: Math.floor(Math.random() * 5) + 1,
             region: region || "Unknown"
         });
     }
-    return data;
+
+    return data.sort((a, b) => new Date(a.dateTime) - new Date(b.dateTime));
 }
 
 function renderTable(data) {

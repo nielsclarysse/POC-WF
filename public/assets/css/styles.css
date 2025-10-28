@@ -1,5 +1,11 @@
 /* === Authentication, ... Button === */
-#authBtn, .subscriptionBtn, #cancelBtn, #acceptBtn, #sendBtn {
+#authBtn,
+.subscriptionBtn,
+#cancelBtn,
+#acceptBtn,
+#sendBtn,
+#understoodBtn,
+#toSubscriptionBtn {
     color: var(--gray-100);
     background-color: var(--green-300);
     border: none;
@@ -167,7 +173,7 @@ footer {
 }
 
 /* === Subscription confirmation === */
-#confirmPopup, #filterError {
+#confirmPopup, #filterError, #subscriptionError {
     display: none;
     position: fixed;
     top: 50%;
@@ -201,6 +207,7 @@ footer {
     }
 }
 
-#filterError #cancelBtn {
+#filterError #understoodBtn,
+#subscriptionError #toSubscriptionBtn {
     width: 100%;
 }
