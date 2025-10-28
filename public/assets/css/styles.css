@@ -296,4 +296,40 @@ footer {
 .dcol {
     margin-right: 1rem;
     padding: 0;
+
+    & ul li button {
+        color: var(--gray-500);
+
+        &:hover {
+            color: var(--gray-500);
+        }
+    }
+
+    & .tab-content {
+        height: 100%;
+        overflow-y: auto;
+
+        .table-dark th {
+            color: white;
+            background-color: var(--green-300);
+        }
+
+        &::-webkit-scrollbar {
+            width: 0.5rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: var(--green-300);
+            border-radius: var(--radius);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--green-400);
+            border-radius: var(--radius);
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: var(--green-400);
+        }
+    }
 }
