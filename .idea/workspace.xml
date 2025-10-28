@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: partial implementation of the data tab and adds some styling like backdrop filter">
+    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: you can't enter data without propper subscription">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-old/assets/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-old/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-old/assets/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public-old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/subs.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/subs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +95,7 @@
       <workItem from="1761555403414" duration="6401000" />
       <workItem from="1761565651362" duration="2567000" />
       <workItem from="1761571708490" duration="8000" />
-      <workItem from="1761639330760" duration="4137000" />
+      <workItem from="1761639330760" duration="8221000" />
     </task>
     <task id="LOCAL-00001" summary="Snapshot :-)">
       <option name="closed" value="true" />
@@ -244,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761641398289</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Final: you can't enter data without propper subscription">
+      <option name="closed" value="true" />
+      <created>1761643522363</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1761643522363</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +277,7 @@
     <MESSAGE value="Final: working subscription page" />
     <MESSAGE value="Final: working subscription page (improved)" />
     <MESSAGE value="Final: partial implementation of the data tab and adds some styling like backdrop filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final: partial implementation of the data tab and adds some styling like backdrop filter" />
+    <MESSAGE value="Final: you can't enter data without propper subscription" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final: you can't enter data without propper subscription" />
   </component>
 </project>

@@ -38,13 +38,13 @@
     </nav>
 </header>
 
-<main class="container-fluid my-4">
-    <div class="row">
-        <div class="col-md-3 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title text-center fw-bold mb-3">Filter</h3>
-                    <div class="mb-3">
+<main class="container-fluid fd">
+    <div class="row frow">
+        <div class="col-md-3 fcol">
+            <div class="card fcard">
+                <div class="card-body fcbody">
+                    <h3 class="text-center fw-bold">Filter</h3>
+                    <div>
                         <h5>Region</h5>
                         <select id="regionSelect" class="form-select">
                             <option value="">Select a Region</option>
@@ -57,7 +57,7 @@
                             <option value="Antarctica">Antarctica & Misc</option>
                         </select>
                     </div>
-                    <div class="mb-3">
+                    <div>
                         <h5>Species</h5>
                         <select id="speciesSelect" class="form-select" multiple>
                             <option>Wolves</option>
@@ -72,19 +72,19 @@
                             <option>Kangaroo</option>
                         </select>
                     </div>
-                    <div class="mb-3">
+                    <div>
                         <h5>Period</h5>
                         <label class="form-label">From</label>
-                        <input type="date" id="fromDate" class="form-control mb-2">
+                        <input type="date" id="fromDate" class="form-control">
                         <label class="form-label">To</label>
                         <input type="date" id="toDate" class="form-control">
                     </div>
-                    <button id="generateBtn" class="btn btn-primary w-100 mt-2">Generate</button>
+                    <button id="generateBtn" class="btn btn-primary w-100">Generate</button>
                 </div>
             </div>
         </div>
         <div class="col-md-9">
-            <ul class="nav nav-tabs mb-3" id="dataTabs">
+            <ul class="nav nav-tabs" id="dataTabs">
                 <li class="nav-item">
                     <button class="nav-link active" id="dataTabBtn" data-bs-toggle="tab" data-bs-target="#dataTab">Data</button>
                 </li>
