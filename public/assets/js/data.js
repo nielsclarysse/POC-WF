@@ -1,0 +1,85 @@
+const generateBtn = document.getElementById("generateBtn");
+const dataTableBody = document.querySelector("#dataTable tbody");
+const ctx = document.getElementById("activityChart").getContext("2d");
+let chart;
+
+document.querySelector("#filterError #cancelBtn").addEventListener("click", () => {
+    document.querySelector("#filterError").style.display = "none";
+    document.querySelector("main").style.filter = "none";
+});
+
+function generateRandomData(region, speciesList, from, to) {
+    const data = [];
+    const now = new Date();
+    for (let i = 0; i < 8; i++) {
+        const randomSpecies = speciesList[Math.floor(Math.random() * speciesList.length)];
+        const date = new Date(now - Math.random() * 1000 * 3600 * 24);
+        data.push({
+            dateTime: date.toISOString().slice(0, 16).replace("T", " "),
+            species: randomSpecies,
+            count: Math.floor(Math.random() * 4) + 1,
+            region: region || "Unknown"
+        });
+    }
+    return data;
+}
+
+function renderTable(data) {
+    dataTableBody.innerHTML = "";
+    data.forEach(row => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td>${row.dateTime}</td>
+            <td>${row.species}</td>
+            <td>${row.count}</td>
+            <td>${row.region}</td>
+        `;
+        dataTableBody.appendChild(tr);
+    });
+}
+
+function renderChart(data) {
+    const times = data.map(d => d.dateTime.split(" ")[1]);
+    const counts = data.map(d => d.count);
+
+    if (chart) chart.destroy();
+
+    chart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: times,
+            datasets: [{
+                label: "Activity Count",
+                data: counts,
+                borderWidth: 2,
+                fill: false,
+                tension: 0.4
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+                x: { title: { display: true, text: "Time" } },
+                y: { title: { display: true, text: "Count" }, beginAtZero: true }
+            }
+        }
+    });
+}
+
+generateBtn.addEventListener("click", () => {
+    const region = document.getElementById("regionSelect").value;
+    const species = Array.from(document.getElementById("speciesSelect").selectedOptions).map(o => o.value);
+    const from = document.getElementById("fromDate").value;
+    const to = document.getElementById("toDate").value;
+
+    if (!region || species.length === 0) {
+        document.querySelector("#filterError").style.display = "block";
+        document.querySelector("main").style.filter = "blur(2px)";
+        return;
+    }
+
+    const data = generateRandomData(region, species, from, to);
+    renderTable(data);
+    renderChart(data);
+});

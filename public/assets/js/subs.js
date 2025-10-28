@@ -29,6 +29,7 @@ function setupSubscriptionButtons() {
                     </form>
                 `;
                 popup.style.display = "block";
+                document.querySelector("main").style.filter = "blur(2px)";
 
                 document.getElementById("sendBtn").addEventListener("click", () => {
                     popup.style.display = "none";
@@ -44,10 +45,12 @@ function setupSubscriptionButtons() {
                     <button id="acceptBtn">Accept</button>
                 `;
                 popup.style.display = "block";
+                document.querySelector("main").style.filter = "blur(2px)";
 
                 document.getElementById("cancelBtn").addEventListener("click", () => {
                     pendingTier = null;
                     popup.style.display = "none";
+                    document.querySelector("main").style.filter = "none";
                 });
 
                 document.getElementById("acceptBtn").addEventListener("click", () => {
@@ -56,6 +59,7 @@ function setupSubscriptionButtons() {
                     highlightSelectedTier(buttons, selectedTier);
                     pendingTier = null;
                     popup.style.display = "none";
+                    document.querySelector("main").style.filter = "none";
                 });
             }
         });
