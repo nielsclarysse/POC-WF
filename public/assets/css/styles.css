@@ -43,8 +43,8 @@ footer {
     bottom: 0;
 }
 
-/* === Map & List & Filter & Data === */
-#ml .col-md-3, .fd {
+/* === Map & List & Filter & Data & ... === */
+#ml .col-md-3, .fd, .vl {
     display: flex;
     flex-direction: column;
     height: 80vh;
@@ -338,4 +338,26 @@ footer {
     min-height: 68vh;
     max-height: 68vh;
     align-items: center;
+}
+
+/* === Video Page Stuff === */
+.vlc {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.v, .l {
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+}
+
+.v {
+    flex: 1 0;
+    margin-left: 1rem;
+    height: 80vh;
+}
+
+.l {
+    margin-right: 1rem;
 }
