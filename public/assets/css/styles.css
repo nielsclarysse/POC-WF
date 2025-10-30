@@ -17,6 +17,17 @@
     }
 }
 
+.vbutton {
+    background-color: var(--gray-200) !important;
+    padding: 0;
+    border-radius: 50rem !important;
+    margin: 0 1rem;
+
+    &:hover {
+        background-color: var(--gray-300) !important;
+    }
+}
+
 /* === Header (title, nav & logout) & Main & Footer (copyright message) === */
 header, footer {
     color: var(--gray-100) !important;

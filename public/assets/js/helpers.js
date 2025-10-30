@@ -24,8 +24,14 @@ function renderCameraList(cameras) {
         $button.style.float = "right";
         $button.onclick = () => window.toggleBookmark(c.name);
 
+        const $vButton = document.createElement("button");
+        $vButton.textContent = "👁️";
+        $vButton.classList.add("vbutton");
+        $vButton.onclick = () => view(c.name);
+
         $li.appendChild($div);
         $li.appendChild($button);
+        $li.appendChild($vButton);
 
         $li.addEventListener("click", (e) => {
             if (e.target !== $button) {
@@ -38,4 +44,4 @@ function renderCameraList(cameras) {
     });
 }
 
-export { renderCameraList };
+export {renderCameraList};

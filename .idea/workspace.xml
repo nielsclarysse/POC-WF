@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Joke: adds green">
-      <change beforePath="$PROJECT_DIR$/public/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/reset.css" afterDir="false" />
+    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: reverts joke :-)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/helpers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +93,7 @@
       <workItem from="1761743146871" duration="3989000" />
       <workItem from="1761818367809" duration="3519000" />
       <workItem from="1761822733762" duration="120000" />
-      <workItem from="1761840936555" duration="355000" />
+      <workItem from="1761840936555" duration="1150000" />
     </task>
     <task id="LOCAL-00001" summary="Snapshot :-)">
       <option name="closed" value="true" />
@@ -309,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761841015333</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Final: reverts joke :-)">
+      <option name="closed" value="true" />
+      <created>1761841409677</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1761841409677</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +347,7 @@
     <MESSAGE value="Final: partial implementation of the video tab" />
     <MESSAGE value="Final: completed the camera page" />
     <MESSAGE value="Joke: adds green" />
-    <option name="LAST_COMMIT_MESSAGE" value="Joke: adds green" />
+    <MESSAGE value="Final: reverts joke :-)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final: reverts joke :-)" />
   </component>
 </project>
