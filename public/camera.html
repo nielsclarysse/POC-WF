@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/js/map.js" type="module"></script>
+    <script src="assets/js/camera.js" type="module"></script>
 </head>
 <body>
 
@@ -41,33 +41,33 @@
 <main>
     <div class="row vlc">
         <div class="card v">
-            <h3>North Forest</h3>
             <div class="position-relative rounded">
-                <video src="assets/videos/north-forest.mp4" class="w-100 rounded" controls autoplay muted loop></video>
-                <span class="position-absolute top-0 end-0 text-danger fw-bold m-2">Live ●</span>
+                <video src="v.mp4" class="w-100 rounded" controls autoplay muted loop></video>
+                <span id="rname">Unknown Camera</span>
+                <span id="lstatus">Live ●</span>
             </div>
         </div>
         <div class="card col-md-3 l">
-            <h4 class="mb-3">Cameras nearby</h4>
+            <h3 class="mb-3">Cameras nearby</h3>
             <div class="mb-3">
                 <h6>West Forest</h6>
                 <div class="position-relative rounded">
-                    <video src="assets/videos/west-forest.mp4" class="w-100 rounded" controls autoplay muted loop></video>
-                    <span class="position-absolute top-0 end-0 text-danger fw-bold m-1">Live ●</span>
+                    <video src="v.mp4" class="w-100 rounded" controls autoplay muted loop></video>
+                    <span>Live ●</span>
                 </div>
             </div>
             <div class="mb-3">
                 <h6>East Forest</h6>
                 <div class="position-relative rounded">
-                    <video src="assets/videos/east-forest.mp4" class="w-100 rounded" controls autoplay muted loop></video>
-                    <span class="position-absolute top-0 end-0 text-danger fw-bold m-1">Live ●</span>
+                    <video src="v.mp4" class="w-100 rounded" controls autoplay muted loop></video>
+                    <span>Live ●</span>
                 </div>
             </div>
             <div>
                 <h6>South Forest</h6>
                 <div class="position-relative rounded">
-                    <video src="assets/videos/south-forest.mp4" class="w-100 rounded" controls autoplay muted loop></video>
-                    <span class="position-absolute top-0 end-0 text-danger fw-bold m-1">Live ●</span>
+                    <video src="v.mp4" class="w-100 rounded" controls autoplay muted loop></video>
+                    <span>Live ●</span>
                 </div>
             </div>
         </div>
