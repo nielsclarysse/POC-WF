@@ -318,30 +318,55 @@ footer {
 
     & .tab-content {
         height: 100%;
-        overflow-y: auto;
+        overflow: hidden;
+        border-radius: var(--radius);
 
         .table-dark th {
             color: white;
             background-color: var(--green-300);
         }
+    }
+}
 
-        &::-webkit-scrollbar {
-            width: 0.5rem;
-        }
+.tab-content, #dataTab, table, tr {
+    width: 100%;
+}
 
-        &::-webkit-scrollbar-track {
-            background: var(--green-300);
-            border-radius: var(--radius);
-        }
+tr {
+    display: flex;
+}
 
-        &::-webkit-scrollbar-thumb {
-            background: var(--green-400);
-            border-radius: var(--radius);
-        }
+th, td {
+    flex: 1;
+}
 
-        &::-webkit-scrollbar-thumb:hover {
-            background: var(--green-400);
-        }
+thead {
+    display: inline-block;
+    width: 100%;
+}
+
+tbody {
+    height: 35rem;
+    display: inline-block;
+    width: 100%;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: var(--green-300);
+        border-radius: var(--radius);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--green-400);
+        border-radius: var(--radius);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: var(--green-400);
     }
 }
 

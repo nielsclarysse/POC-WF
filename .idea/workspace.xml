@@ -7,7 +7,6 @@
     <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: reverts joke :-)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/helpers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
