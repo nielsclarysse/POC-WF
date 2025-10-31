@@ -6,7 +6,8 @@
 #sendBtn,
 #understoodBtn,
 #toSubscriptionBtn,
-#generateBtn {
+#generateBtn,
+.vbutton {
     color: var(--gray-100);
     background-color: var(--green-300);
     border: none;
@@ -14,17 +15,6 @@
 
     &:hover {
         background-color: var(--green-400);
-    }
-}
-
-.vbutton {
-    background-color: var(--gray-200) !important;
-    padding: 0;
-    border-radius: 50rem !important;
-    margin: 0 1rem;
-
-    &:hover {
-        background-color: var(--gray-300) !important;
     }
 }
 
@@ -88,6 +78,10 @@ footer {
     &:focus {
         border-color: var(--gray-500);
     }
+}
+
+.vbutton {
+    margin-left: 0.5rem;
 }
 
 #cameraList {
