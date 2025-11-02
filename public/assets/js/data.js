@@ -115,3 +115,20 @@ generateBtn.addEventListener("click", () => {
     renderTable(data);
     renderChart(data);
 });
+
+const speciesSearch = document.getElementById("speciesSearch");
+const speciesSelect = document.getElementById("speciesSelect");
+
+speciesSearch.addEventListener("input", function() {
+    const searchQuery = speciesSearch.value.toLowerCase();
+    const speciesOptions = speciesSelect.getElementsByTagName("option");
+
+    Array.from(speciesOptions).forEach(option => {
+        const speciesName = option.textContent.toLowerCase();
+        if (speciesName.includes(searchQuery)) {
+            option.style.display = "";
+        } else {
+            option.style.display = "none";
+        }
+    });
+});
