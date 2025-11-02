@@ -27,14 +27,21 @@ function generateRandomData(regions, speciesList, from, to) {
     const data = [];
     const start = from ? new Date(from) : new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
     const end = to ? new Date(to) : new Date();
+    const adjustForTimezone = (date) => {
+        const timezoneOffset = date.getTimezoneOffset() * 60000;
+        return new Date(date.getTime() - timezoneOffset);
+    };
+    const adjustedStart = adjustForTimezone(start);
+    const adjustedEnd = adjustForTimezone(end);
 
     const daysBetween = Math.max(1, Math.floor((end - start) / (1000 * 3600 * 24)));
     const entriesCount = Math.min(300, daysBetween * 40);
 
     for (let i = 0; i < entriesCount; i++) {
         const randomSpecies = speciesList[Math.floor(Math.random() * speciesList.length)];
-        const randomRegion = regions[Math.floor(Math.random() * regions.length)]; // Pick a random region from selected regions
-        const timestamp = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+        const randomRegion = regions[Math.floor(Math.random() * regions.length)];
+
+        const timestamp = new Date(adjustedStart.getTime() + Math.random() * (adjustedEnd.getTime() - adjustedStart.getTime()));
 
         data.push({
             dateTime: timestamp.toISOString().slice(0, 16).replace("T", " "),
