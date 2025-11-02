@@ -241,6 +241,11 @@ footer {
     width: 100%;
 }
 
+#regionSelect option:checked,
+#speciesSelect option:checked {
+    background-color: var(--green-200);
+}
+
 .frow, .fcol, .fcard, .fcbody {
     height: 100%;
 

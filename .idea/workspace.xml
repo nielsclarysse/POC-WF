@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: makes region multiple type">
+    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: adds minutes to the filter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +96,7 @@
       <workItem from="1761895669592" duration="2400000" />
       <workItem from="1761920206732" duration="48000" />
       <workItem from="1762080643144" duration="83000" />
-      <workItem from="1762082186291" duration="584000" />
+      <workItem from="1762082186291" duration="1258000" />
     </task>
     <task id="LOCAL-00001" summary="Snapshot :-)">
       <option name="closed" value="true" />
@@ -355,14 +354,21 @@
       <option name="project" value="LOCAL" />
       <updated>1762082356678</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Final: adds minutes to the filter">
+      <option name="closed" value="true" />
+      <created>1762082854322</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1762082854322</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Snapshot :-)" />
     <MESSAGE value="Final: add css template and authentication button" />
     <MESSAGE value="Final: completes the authentication screen" />
     <MESSAGE value="Final: the map page functions now, just need some styling" />
@@ -387,6 +393,7 @@
     <MESSAGE value="Final: scroll improvements" />
     <MESSAGE value="Final: small adjustment" />
     <MESSAGE value="Final: makes region multiple type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final: makes region multiple type" />
+    <MESSAGE value="Final: adds minutes to the filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final: adds minutes to the filter" />
   </component>
 </project>
