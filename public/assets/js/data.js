@@ -23,7 +23,7 @@ document.querySelector("#filterError #understoodBtn").addEventListener("click", 
     document.querySelector("main").style.filter = "none";
 });
 
-function generateRandomData(region, speciesList, from, to) {
+function generateRandomData(regions, speciesList, from, to) {
     const data = [];
     const start = from ? new Date(from) : new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
     const end = to ? new Date(to) : new Date();
@@ -33,13 +33,14 @@ function generateRandomData(region, speciesList, from, to) {
 
     for (let i = 0; i < entriesCount; i++) {
         const randomSpecies = speciesList[Math.floor(Math.random() * speciesList.length)];
+        const randomRegion = regions[Math.floor(Math.random() * regions.length)]; // Pick a random region from selected regions
         const timestamp = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 
         data.push({
             dateTime: timestamp.toISOString().slice(0, 16).replace("T", " "),
             species: randomSpecies,
             count: Math.floor(Math.random() * 5) + 1,
-            region: region || "Unknown"
+            region: randomRegion || "Unknown"
         });
     }
 
@@ -92,18 +93,18 @@ function renderChart(data) {
 }
 
 generateBtn.addEventListener("click", () => {
-    const region = document.getElementById("regionSelect").value;
+    const regions = Array.from(document.getElementById("regionSelect").selectedOptions).map(o => o.value);
     const species = Array.from(document.getElementById("speciesSelect").selectedOptions).map(o => o.value);
     const from = document.getElementById("fromDate").value;
     const to = document.getElementById("toDate").value;
 
-    if (!region || species.length === 0) {
+    if (regions.length === 0 || species.length === 0) {
         document.querySelector("#filterError").style.display = "block";
         document.querySelector("main").style.filter = "blur(2px)";
         return;
     }
 
-    const data = generateRandomData(region, species, from, to);
+    const data = generateRandomData(regions, species, from, to);
     renderTable(data);
     renderChart(data);
 });
