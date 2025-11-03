@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: adds some species to the list">
+    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: removes free">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/subs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/subs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,8 @@
       <workItem from="1762173402304" duration="896000" />
       <workItem from="1762177306930" duration="8000" />
       <workItem from="1762177337841" duration="3000" />
-      <workItem from="1762179983285" duration="85000" />
+      <workItem from="1762179983285" duration="125000" />
+      <workItem from="1762180155492" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="Snapshot :-)">
       <option name="closed" value="true" />
@@ -390,14 +392,21 @@
       <option name="project" value="LOCAL" />
       <updated>1762084090616</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Final: removes free">
+      <option name="closed" value="true" />
+      <created>1762180096297</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1762180096297</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final: all works on map (now try to add bookmarks)" />
     <MESSAGE value="Final: adds the bookmarks!" />
     <MESSAGE value="Final: style improvements to the map" />
     <MESSAGE value="Final: style improvements to the footer" />
@@ -422,6 +431,7 @@
     <MESSAGE value="Final: small style improvement, but need to ask how to style forms nicely for final version (poc)" />
     <MESSAGE value="Final: adds search option for the species list" />
     <MESSAGE value="Final: adds some species to the list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final: adds some species to the list" />
+    <MESSAGE value="Final: removes free" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final: removes free" />
   </component>
 </project>
