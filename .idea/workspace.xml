@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: adds search option for the species list">
-      <change beforePath="$PROJECT_DIR$/public/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/data.html" afterDir="false" />
+    <list default="true" id="82b24e4d-94d9-476c-98fe-dd50323e791b" name="Changes" comment="Final: adds some species to the list">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,11 @@
       <workItem from="1761920206732" duration="48000" />
       <workItem from="1762080643144" duration="83000" />
       <workItem from="1762082186291" duration="1302000" />
-      <workItem from="1762083576433" duration="465000" />
+      <workItem from="1762083576433" duration="517000" />
+      <workItem from="1762173402304" duration="896000" />
+      <workItem from="1762177306930" duration="8000" />
+      <workItem from="1762177337841" duration="3000" />
+      <workItem from="1762179983285" duration="85000" />
     </task>
     <task id="LOCAL-00001" summary="Snapshot :-)">
       <option name="closed" value="true" />
@@ -378,14 +382,21 @@
       <option name="project" value="LOCAL" />
       <updated>1762083928330</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Final: adds some species to the list">
+      <option name="closed" value="true" />
+      <created>1762084090616</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1762084090616</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final: the map page functions now, just need some styling" />
     <MESSAGE value="Final: all works on map (now try to add bookmarks)" />
     <MESSAGE value="Final: adds the bookmarks!" />
     <MESSAGE value="Final: style improvements to the map" />
@@ -410,6 +421,7 @@
     <MESSAGE value="Final: adds minutes to the filter" />
     <MESSAGE value="Final: small style improvement, but need to ask how to style forms nicely for final version (poc)" />
     <MESSAGE value="Final: adds search option for the species list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final: adds search option for the species list" />
+    <MESSAGE value="Final: adds some species to the list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final: adds some species to the list" />
   </component>
 </project>
